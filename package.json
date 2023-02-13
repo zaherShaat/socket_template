@@ -1,0 +1,26 @@
+{
+  "name": "socket_template",
+  "version": "1.0.0",
+  "description": "template for socket connection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaherShaat/socket_template.git"
+  },
+  "author": "Zaher-Shaat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaherShaat/socket_template/issues"
+  },
+  "homepage": "https://github.com/zaherShaat/socket_template#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.6.0"
+  }
+}

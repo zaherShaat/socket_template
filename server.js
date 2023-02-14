@@ -11,13 +11,7 @@ app.get("/", (req, res) => {
     res.send("Home");
 });
 require('./msg_socket/msgSocket')(io)
-
-///////
-// io.on('connection', (socket) => {
-//     console.log('a user connected '+ socket);
-// });
-///////
-
+///////////
 server.listen(port, () => {
     console.log('http://localhost:' + port);
 });

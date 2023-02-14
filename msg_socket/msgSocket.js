@@ -1,9 +1,9 @@
 
 //////////////
-
 module.exports = function (io) {
     io.sockets.on("connection", (socket) => {
         console.log(" connected from msgs route");
+        // when newMessage event occure.
         socket.on('newMessage', (newMessage) => {
             console.log(newMessage);
             socket.emit("msgReply", { reply: newMessage.msg + ' was served' })
@@ -14,6 +14,4 @@ module.exports = function (io) {
         });
     });
 }
-
-
 //////////////
